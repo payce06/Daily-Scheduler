@@ -16,3 +16,22 @@ body {
 h1 {
     text-align: center;
 }
+
+#currentDate {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.time-block {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.hour {
+    width: 80px;
+    padding: 10px;
+    background: #eee;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
