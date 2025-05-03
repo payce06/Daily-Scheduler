@@ -35,3 +35,20 @@ h1 {
     text-align: center;
     border-right: 1px solid #ccc;
 }
+
+textarea {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.saveBtn {
+    width: 60px;
+    background: #2196f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
