@@ -14,3 +14,18 @@ function loadSchedule() {
     const now = new Date();
     const currentHour = now.getHours();
     currentDate.textContent = now.toDateString();
+    for (let hour = startHour; hour <= endHour; hour++) {
+        const timeBlock = document.createElement('div');
+        timeBlock.classList.add('time-block');
+
+        const hourLabel = document.createElement('div');
+        hourLabel.classList.add('hour');
+        hourLabel.textContent = formatHour(hour);
+
+        const textarea = document.createElement('textarea');
+        const key = `hour-${hour}`;
+        textarea.value = localStorage.getItem(key) || '';
+
+        if (hour < currentHour) textarea.classList.add('past');
+        else if (hour == currentHour) textarea.classList.add('present');
+        else textarea.classList.add('future');
