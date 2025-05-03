@@ -52,3 +52,19 @@ textarea {
     border: none;
     cursor: pointer;
 }
+
+.save-btn:hover {
+    background: #0d8bf2;
+}
+
+.past {
+    background: #d3d3d3;
+}
+
+.present {
+    background: #ffcccb;
+}
+
+.future {
+    background: #ccffcc;
+}
