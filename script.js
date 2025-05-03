@@ -29,3 +29,18 @@ function loadSchedule() {
         if (hour < currentHour) textarea.classList.add('past');
         else if (hour == currentHour) textarea.classList.add('present');
         else textarea.classList.add('future');
+
+        const saveBtn = document.createElement('button');
+        saveBtn.classList.add('save-button');
+        saveBtn.textContent = '💾';
+        saveBtn.onclick = () => {
+            localStorage.setItem(key, textarea.value);
+        };
+
+        timeBlock.appendChild(hourLabel);
+        timeBlock.appendChild(textarea);
+        timeBlock.appendChild(saveBtn);
+        scheduleContainer.appendChild(timeBlock);
+
+    }
+}
